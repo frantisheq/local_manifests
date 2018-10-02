@@ -1,1 +1,1 @@
-local_manifests
+cp device.xml .repo/local_manifests

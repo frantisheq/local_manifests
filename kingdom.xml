@@ -3,6 +3,7 @@
   <!-- Upstream -->
   <!--project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" revision="lineage-15.1"/-->
   <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="lineage-15.1"/>
+  <project name="LineageOS/android_external_bson" path="external/bson" remote="github" revision="lineage-15.1"/>
   <project name="LineageOS/android_packages_apps_FlipFlap" path="packages/apps/FlipFlap" remote="github" revision="lineage-15.1"/>
 
   <!-- TWRP -->
@@ -11,7 +12,6 @@
 
   <!-- Kingdom -->
   <project name="frantisheq/android_device_lenovo_kingdom" path="device/lenovo/kingdom" remote="github" revision="lineage-15.1"/>
-  <project name="frantisheq/android_device_lenovo_msm8974-common" path="device/lenovo/msm8974-common" remote="github" revision="lineage-15.1"/>
   <project name="frantisheq/android_kernel_cyanogen_msm8974" path="kernel/cyanogen/msm8974" remote="github" revision="lineage-15.1"/>
   <project name="frantisheq/proprietary_vendor_lenovo" path="vendor/lenovo" remote="github" revision="lineage-15.1"/>
 </manifest>

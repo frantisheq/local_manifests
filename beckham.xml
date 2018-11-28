@@ -14,4 +14,5 @@
   <project name="frantisheq/proprietary_vendor_motorola" path="vendor/motorola" remote="frantisheq" revision="lineage-16.0"/>
 
   <project name="erfanoabdi/android_system_qcom" path="system/qcom" remote="github" revision="lineage-16.0"/>
+  <project name="frantisheq/android_vendor_extra" path="vendor/extra" remote="github" revision="lineage-16.0"/>
 </manifest>

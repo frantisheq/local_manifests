@@ -3,9 +3,16 @@
   <remote  name="frantisheq"
            fetch="https://frantisheq:****@github.com" />
 
+  <remote name="opengapps"
+           fetch="https://github.com/opengapps/"  />
+
   <!-- Upstream -->
   <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="lineage-16.0"/>
   <project name="LineageOS/android_external_bson" path="external/bson" remote="github" revision="lineage-16.0"/>
+
+  <!-- TWRP -->
+  <!-- project name="omnirom/android_bootable_recovery" path="bootable/recovery-twrp" revision="android-9.0" groups="pdk-cw-fs" / -->
+  <!-- project name="omnirom/android_external_busybox" path="external/busybox" revision="android-9.0" / -->
 
   <!-- Beckham -->
   <project name="frantisheq/android_device_motorola_beckham" path="device/motorola/beckham" remote="github" revision="lineage-16.0"/>
@@ -13,6 +20,14 @@
   <project name="frantisheq/android_kernel_motorola_sdm660" path="kernel/motorola/sdm660" remote="github" revision="lineage-16.0"/>
   <project name="frantisheq/proprietary_vendor_motorola" path="vendor/motorola" remote="frantisheq" revision="lineage-16.0"/>
 
-  <project name="erfanoabdi/android_system_qcom" path="system/qcom" remote="github" revision="lineage-16.0"/>
+  <project name="frantisheq/android_system_qcom" path="system/qcom" remote="github" revision="lineage-16.0"/>
   <project name="frantisheq/android_vendor_extra" path="vendor/extra" remote="github" revision="lineage-16.0"/>
+
+  <!-- OpenGApps -->
+  <project path="vendor/opengapps/build" name="aosp_build" revision="master" remote="opengapps" />
+  <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps" />
+
+  <!-- arm64 depends on arm -->
+  <project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="opengapps" />
+  <project path="vendor/opengapps/sources/arm64" name="arm64" clone-depth="1" revision="master" remote="opengapps" />
 </manifest>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github"
+           fetch="https://github.com/"  />
+
+  <!-- Upstream -->
+  <project name="MoKee/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="mkp"/>
+  <project name="LineageOS/android_external_bson" path="external/bson" remote="github" revision="lineage-16.0"/>
+  <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="lineage-16.0"/>
+
+  <!-- Kingdom -->
+  <project name="frantisheq/android_device_lenovo_kingdom" path="device/lenovo/kingdom" remote="github" revision="mokee/mkp"/>
+  <project name="frantisheq/android_kernel_cyanogen_msm8974" path="kernel/cyanogen/msm8974" remote="github" revision="lineage-16.0-k920"/>
+  <project name="frantisheq/proprietary_vendor_lenovo" path="vendor/lenovo" remote="github" revision="lineage-16.0"/>
+</manifest>

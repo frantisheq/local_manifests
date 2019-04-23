@@ -24,7 +24,7 @@
   <!-- Beckham -->
   <project name="frantisheq/android_device_motorola_beckham" path="device/motorola/beckham" remote="frantisheq" revision="lineageos/lineage-16.0"/>
   <project name="frantisheq/android_device_motorola_sdm660-common" path="device/motorola/sdm660-common" remote="frantisheq" revision="lineageos/lineage-16.0"/>
-  <project name="frantisheq/android_kernel_motorola_msm8998" path="kernel/motorola/msm8998" remote="github" revision="lineageos/lineage-16.0"/>
+  <project name="frantisheq/android_kernel_motorola_msm8998" path="kernel/motorola/msm8998" remote="frantisheq" revision="lineageos/lineage-16.0"/>
   <project name="frantisheq/proprietary_vendor_motorola" path="vendor/motorola" remote="frantisheq" revision="linageos/lineage-16.0"/>
 
   <project name="LineageOS/android_system_qcom" path="system/qcom" remote="github" revision="lineage-16.0"/>

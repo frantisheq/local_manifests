@@ -17,16 +17,15 @@
 
   <!-- TWRP -->
   <!-- project name="omnirom/android_bootable_recovery" path="bootable/recovery-twrp" revision="android-9.0" groups="pdk-cw-fs" /-->
-  <!-- remove-project name="LineageOS/android_bootable_recovery" / -->
-  <!-- project name="omnirom/android_bootable_recovery" path="bootable/recovery" revision="android-9.0" / -->
-  <!-- project name="TeamWin/android_external_busybox" path="external/busybox" revision="android-9.0" / -->
+  <!-- remove-project name="LineageOS/android_bootable_recovery" /-->
+  <!-- project name="omnirom/android_bootable_recovery" path="bootable/recovery" revision="android-9.0" /-->
+  <!-- project name="omnirom/android_external_busybox" path="external/busybox" revision="android-9.0" /-->
 
   <!-- Beckham -->
-  <project name="frantisheq/android_device_motorola_beckham" path="device/motorola/beckham" remote="frantisheq" revision="lineage-16.0"/>
-  <project name="frantisheq/android_device_motorola_sdm660-common" path="device/motorola/sdm660-common" remote="frantisheq" revision="lineage-16.0"/>
-  <project name="LineageOS/android_kernel_motorola_msm8998" path="kernel/motorola/msm8998" remote="github" revision="lineage-16.0"/>
-  <!-- project name="MotorolaMobilityLLC/kernel-msm" path="kernel/motorola/sdm660" remote="github" revision="oreo-8.1.0-release-beckham"/ -->
-  <project name="frantisheq/proprietary_vendor_motorola" path="vendor/motorola" remote="frantisheq" revision="lineage-16.0"/>
+  <project name="frantisheq/android_device_motorola_beckham" path="device/motorola/beckham" remote="frantisheq" revision="lineageos/lineage-16.0"/>
+  <project name="frantisheq/android_device_motorola_sdm660-common" path="device/motorola/sdm660-common" remote="frantisheq" revision="lineageos/lineage-16.0"/>
+  <project name="frantisheq/android_kernel_motorola_msm8998" path="kernel/motorola/msm8998" remote="github" revision="lineageos/lineage-16.0"/>
+  <project name="frantisheq/proprietary_vendor_motorola" path="vendor/motorola" remote="frantisheq" revision="linageos/lineage-16.0"/>
 
   <project name="LineageOS/android_system_qcom" path="system/qcom" remote="github" revision="lineage-16.0"/>
   <project name="erfanoabdi/android_vendor_extra" path="vendor/extra" remote="github" revision="lineage-16.0"/>
@@ -39,7 +38,6 @@
   <project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="nezor" />
   <project path="vendor/opengapps/sources/arm64" name="arm64" clone-depth="1" revision="master" remote="nezor" />
 
-  <!--project path="vendor/gapps" name="vendor_gapps" revision="pie" remote="gitlab-pe" /-->
-
   <remove-project name="LineageOS/android_packages_apps_SetupWizard" />
+  <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
 </manifest>

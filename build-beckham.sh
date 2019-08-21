@@ -1,6 +1,6 @@
 #!/bin/bash
 
-lineageos=/media/android/lineageos
+lineageos=/home/frantisheq/Workplace/android/lineageos
 
 basketbuild="frantisheq.basketbuild.com,**** basketbuild.com"
 webhost="frantisheq,**** files.000webhost.com"
@@ -10,14 +10,17 @@ cd $lineageos
 
 PATH=~/bin:$PATH
 
+repo sync --jobs=8 --fetch-submodules --current-branch --no-clone-bundle
+
 export TMPDIR=/home/frantisheq/.tmpdir
 export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4096m"
 export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4096m"
-export OUT_DIR_COMMON_BASE=/media/android/out
+#export OUT_DIR_COMMON_BASE=/home/frantisheq/android/out
 export USE_CCACHE=1
+#export LC_ALL=C
+#export JAVA_HOME=/usr/lib64/jvm/java-1.8.0-openjdk
+#export CPU_SSE42=false
 
-
-#repo sync --force-sync
 source build/envsetup.sh
 
 # MODS
@@ -31,7 +34,7 @@ repopick 237141
 repopick 237142
 
 # JBL mod
-repopick 237143
+# repopick 237143
 
 # Enable metadata for FDE
 #repopick 243744

@@ -5,11 +5,15 @@
 
   <remote name="opengapps"
            fetch="https://github.com/opengapps/"  />
-  <remote name="gitlab-opengapps-org" 
-           fetch="https://gitlab.opengapps.org/opengapps/"  />
+
+  <remote name="nezor" 
+           fetch="https://gitlab.nezorfla.me/opengapps/"  />
 
   <remote name="gitlab-pe" 
            fetch="https://gitlab.com/PixelExperience/"  />
+  
+  <remote name="gitlab-og" 
+           fetch="https://gitlab.opengapps.org/opengapps/"  />
 
   <!-- Upstream -->
   <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="lineage-16.0"/>
@@ -31,5 +35,22 @@
   <project name="frantisheq/android_kernel_motorola_sdm660" path="kernel/motorola/sdm660" remote="frantisheq" revision="lineage-16.0"/>
   <project name="frantisheq/proprietary_vendor_motorola" path="vendor/motorola" remote="frantisheq" revision="lineage-16.0"/>
 
+  <!-- OpenGApps -->
+  <!-- project path="vendor/opengapps/build" name="aosp_build" revision="master" remote="opengapps" / -->
+  <!-- project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="nezor" / -->
 
+  <!-- arm64 depends on arm -->
+  <!-- project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="nezor" / -->
+  <!-- project path="vendor/opengapps/sources/arm64" name="arm64" clone-depth="1" revision="master" remote="nezor" / -->
+
+  <!-- OpenGApps -->
+  <project path="vendor/opengapps/build" name="aosp_build" revision="master" remote="opengapps" />
+  <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="gitlab-og" />
+
+  <!-- arm64 depends on arm -->
+  <project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="gitlab-og" />
+  <project path="vendor/opengapps/sources/arm64" name="arm64" clone-depth="1" revision="master" remote="gitlab-og" />
+
+  <remove-project name="LineageOS/android_packages_apps_SetupWizard" />
+  <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
 </manifest>
